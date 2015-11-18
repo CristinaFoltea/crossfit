@@ -377,7 +377,7 @@ h1, h2 {
 
 li {
   font-style: 1.1em;
-  line-height: 2.2em; }
+  line-height: 2.4em; }
 
 .right-header {
   text-align: right; }
@@ -443,6 +443,8 @@ header nav {
       padding-left: 15px; }
       header nav .drop-down li:hover {
         background: rgba(69, 202, 88, 0.8); }
+      header nav .drop-down li a {
+        text-transform: uppercase; }
   header nav .dropdown-location-inner {
     display: none; }
     header nav .dropdown-location-inner.drop-down-active {

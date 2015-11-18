@@ -10,6 +10,9 @@ header {
         &:hover {
           background: $green;
         }
+        a {
+          text-transform: uppercase;
+        }
       }
     }
     .dropdown-location-inner {
