@@ -12,7 +12,8 @@
       .when('/second', {
         templateUrl: '/app/views/second.html',
         controller: 'SecondController'
-      });
+      })
+      .otherwise({redirectTo:'/'});
 
       $locationProvider.html5Mode({
         enabled: true,
