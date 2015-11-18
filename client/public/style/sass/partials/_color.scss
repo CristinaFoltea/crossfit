@@ -1,0 +1,18 @@
+$green : rgba(69, 202, 88, 0.8);
+$grey : rgba(161, 165, 173, 1);
+$darkgrey : rgba(88, 88, 88, 1);
+$offwhite : rgba(246, 246, 247, 1);
+$bgoffwhite : rgba(246, 246, 247, 0.98);
+
+body {
+  background: $offwhite;
+  p, a, li {
+    color: $darkgrey;
+  }
+  header {
+    color: $offwhite;
+    nav {
+      background: $bgoffwhite;
+    }
+  }
+}

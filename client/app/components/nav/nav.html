@@ -1,0 +1,26 @@
+<header class="logo">
+  <div class="title">
+    <h2 class="fa fa-bars left-header"></h2>
+    <h2 class="right-header">CrossFit</h2>
+  </div>
+  <nav>
+    <ul class="drop-down">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Exercises and Demos</a></li>
+      <li><a href="#">Nutrition</a></li>
+      <li class="dropdown-location">
+        <a href="#" ng-init="is_active=false" ng-click="is_active=!is_active">
+          <i class="fa" ng-class="{'fa-caret-right' : !is_active, 'fa-caret-down' : is_active}">
+          </i>
+          Find Location
+        </a>
+      </li>
+        <ul class="dropdown-location-inner" ng-class="{'drop-down-active': is_active}">
+          <li><input type="search" placeholder="Enter your city"></li>
+          <li><a href="#">See all</a></li>
+        </ul>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- ///fa-times -->

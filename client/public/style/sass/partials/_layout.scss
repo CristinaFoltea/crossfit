@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  header {
+    position: relative;
+    height: 80px;
+    .left-header{
+      width: 50vw;
+      float: left;
+      position: relative;
+      top: 15px;
+      left: 15px;
+      z-index: 200;
+      transition: left 0.5s, color 0.5s;
+    }
+    .right-header {
+      position: relative;
+      width: 50vw;
+      float: right;
+      padding-right: 15px;
+    }
+  }
+  .article {
+    margin: 15px;
+    overflow: hidden;
+    img {
+      width: 280px;
+      padding-right: 10px;
+      height: auto;
+      float: left;
+    }
+  }
+  nav {
+    position: absolute;
+    z-index: 100;
+    left: -80vw;
+    top: 0;
+    width: 80vw;
+    height: 100vh;
+  }
+}

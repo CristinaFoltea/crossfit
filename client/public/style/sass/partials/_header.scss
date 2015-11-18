@@ -1,0 +1,33 @@
+header {
+  background: #000;
+  nav {
+    visibility: hidden;
+    transition: all 0.5s ease;
+    .drop-down {
+      margin-top: 50px;
+      padding-left: 0px;
+      li {
+        padding-left: 15px;
+        &:hover {
+          background: $green;
+        }
+      }
+    }
+    .dropdown-location-inner {
+      display: none;
+      &.drop-down-active {
+        display: block;
+      }
+    }
+  }
+  input[type=search]{
+    border: none;
+    appearance: none;
+    outline: none;
+    background: transparent;
+  }
+  
+  input[type=radio]{
+    appearance: none;
+  }
+}
