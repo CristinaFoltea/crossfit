@@ -1,6 +1,6 @@
 (function () {
   angular
-      .module('app', ['ngRoute'])
+      .module('app', ['ngRoute', 'angularMoment'])
       .config(config);
 
   function config($routeProvider, $locationProvider) {

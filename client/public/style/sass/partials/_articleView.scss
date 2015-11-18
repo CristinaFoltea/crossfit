@@ -1,0 +1,19 @@
+.article {
+  .repeted-articles {
+    margin-top: 35px;
+    border-bottom: 1px solid $darkgrey;
+    .title {
+      line-height: 0.8em;
+    }
+    .time {
+      text-align: right;
+    }
+  }
+  .repeted-articles:last-child {
+    border-bottom: none;
+  }
+  input[name="search-article"]{
+    display: inline-block;
+    width: 200px;
+  }
+}

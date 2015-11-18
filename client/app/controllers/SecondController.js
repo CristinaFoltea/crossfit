@@ -1,5 +1,7 @@
-angular
-    .module('app')
-    .controller('SecondController', SecondController);
+(function () {
+  angular
+      .module('app')
+      .controller('SecondController', SecondController);
 
-function SecondController() { }
+  function SecondController() { }
+}())

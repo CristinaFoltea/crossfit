@@ -41,17 +41,7 @@ function myNavBar() {
             'color' : 'rgba(246, 246, 247, 1)'
           })
         }
-      }
-      // console.log(button.classList.contains("fa-times"));
-      ////on icon click
-      ///if class hamburger
-      ////remove fa-class for hamburger
-      ////add class X
-      ///slide right side menu
-      ////else
-      ////remove x class
-      ///slide left the menu
-      /////add class humburger
     };
+  }
 }
 }())

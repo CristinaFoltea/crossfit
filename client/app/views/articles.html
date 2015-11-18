@@ -1,31 +1,20 @@
-<article class="article">
-<form class="filtering">
-  <input type="text" ng-model="filter.search" placeholder="Search">
-  <br>
-  <label>Newest
-    <input type="radio" ng-model="filter.radio" value="new">
-  </label>
-  <label>Oldest
-    <input type="radio" ng-model="filter.radio" value="old">
-  </label>
+<article class='article'>
+<form class='filtering'>
+  <input type='text' name="search-article" ng-model='search' placeholder='Search'>
 </form>
-  <section>
-      Date
-    <h1>some title goes in here</h1>
-
-      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvxZ5pc5p1qCTZjt6rvwmiOiNdXnY-W5bKir5Lp6m1x6TPdtiEgA" alt="{{title}}" />
-      <p class="info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <section ng-repeat='article in articles | filter:search' class="repeted-articles">
+    <!-- <span>{{article.date | amParse:'YYYY.MM.DD HH:mm:ss'}}</span> -->
+    <p class="time"><strong>{{ article.date | amDateFormat: 'MM-DD-YYYY' }}</strong></p>
+    <h1 class="title">{{article.title}}</h1>
+      <p class='info' ng-repeat='line in article.info track by $index'>
+          {{line}}
       </p>
+      <img ng-src='{{article.imgSrc}}' alt='{{article.title}}' />
       <p>
-        Post times for each round to comments.
+        '{{article.title}}' at [ <a ng-href='{{article.videoScr}}'>video</a> ]
       </p>
-
-    <!-- <p>
-      "{{some title goes in here}}" at {{some-link}} - [{{video-link}}]
-    </p>
-    <p class="disclamer">
-      Posted by {{author.name}} at {{time}} | Comments -->
+      <p class='disclamer'>
+        Posted by {{article.author}} on {{article.date | amDateFormat: 'MMMM Do YYYY, h:mm a'}}
     </p>
   </section>
 </article>
