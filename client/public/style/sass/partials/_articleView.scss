@@ -1,6 +1,6 @@
 .article {
   .repeted-articles {
-    margin-top: 35px;
+    margin-top: 50px;
     border-bottom: 1px solid $darkgrey;
     .title {
       line-height: 0.8em;
@@ -13,7 +13,18 @@
     border-bottom: none;
   }
   input[name="search-article"]{
-    display: inline-block;
-    width: 200px;
+    display: block;
+    width: 250px;
+    height: 30px;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+    border-radius: 5px 5px;
+  }
+  ::-webkit-input-placeholder {
+    color: $green;
+    padding-left: 5px;
+    padding-bottom: 3px;
   }
 }

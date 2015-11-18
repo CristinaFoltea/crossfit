@@ -390,10 +390,12 @@ article h1 {
 
 body {
   background: #f6f6f7; }
-  body p, body a, body li {
+  body p, body a, body li, body h1, body h2 {
     color: #585858; }
   body header {
-    color: #f6f6f7; }
+    background: #585858; }
+    body header h2 {
+      color: #f6f6f7; }
     body header nav {
       background: rgba(246, 246, 247, 0.98); }
 
@@ -431,30 +433,29 @@ body {
     width: 80vw;
     height: 100vh; }
 
-header {
-  background: #000; }
-  header nav {
-    visibility: hidden;
-    transition: all 0.5s ease; }
-    header nav .drop-down {
-      margin-top: 50px;
-      padding-left: 0px; }
-      header nav .drop-down li {
-        padding-left: 15px; }
-        header nav .drop-down li:hover {
-          background: rgba(69, 202, 88, 0.8); }
-    header nav .dropdown-location-inner {
-      display: none; }
-      header nav .dropdown-location-inner.drop-down-active {
-        display: block; }
-  header input[type=search] {
-    border: none;
-    appearance: none;
-    outline: none;
-    background: transparent; }
+header nav {
+  visibility: hidden;
+  transition: all 0.5s ease; }
+  header nav .drop-down {
+    margin-top: 50px;
+    padding-left: 0px; }
+    header nav .drop-down li {
+      padding-left: 15px; }
+      header nav .drop-down li:hover {
+        background: rgba(69, 202, 88, 0.8); }
+  header nav .dropdown-location-inner {
+    display: none; }
+    header nav .dropdown-location-inner.drop-down-active {
+      display: block; }
+
+header input[type=search] {
+  border: none;
+  appearance: none;
+  outline: none;
+  background: transparent; }
 
 .article .repeted-articles {
-  margin-top: 35px;
+  margin-top: 50px;
   border-bottom: 1px solid #585858; }
   .article .repeted-articles .title {
     line-height: 0.8em; }
@@ -465,5 +466,16 @@ header {
   border-bottom: none; }
 
 .article input[name="search-article"] {
-  display: inline-block;
-  width: 200px; }
+  display: block;
+  width: 250px;
+  height: 30px;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  border-radius: 5px 5px; }
+
+.article ::-webkit-input-placeholder {
+  color: rgba(69, 202, 88, 0.8);
+  padding-left: 5px;
+  padding-bottom: 3px; }

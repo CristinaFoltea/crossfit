@@ -6,11 +6,14 @@ $bgoffwhite : rgba(246, 246, 247, 0.98);
 
 body {
   background: $offwhite;
-  p, a, li {
+  p, a, li, h1, h2 {
     color: $darkgrey;
   }
   header {
-    color: $offwhite;
+    background: $darkgrey;
+    h2 {
+      color: $offwhite;
+    }
     nav {
       background: $bgoffwhite;
     }
